@@ -20,9 +20,9 @@ console.log(playList)
 // OBJECTS SECTION
 // Task 5: Create an object called 'song' with 'title', 'artist', and 'duration' properties
 let song = {
-    title: "" ;
-    artist: "" ;
-    duration: "" ; 
+    title: "Feather",
+    artist: "Nujabes" ,
+    duration: "2:30" ,
 
 };
 
@@ -36,17 +36,23 @@ delete song.artist;
 // ----------------------------------
 // NESTED ARRAYS & OBJECTS SECTION
 // Task 8: Create an object called 'album' with properties song's album's 'name', 'year', and 'songs' (leave 'songs' as empty array for now)
+let album = {
 
+    name: "Modal Soul",
+    year: "2010",
+    songs: [],
+}
 
 // Task 9: Add your song object (task 5) to the empty songs array in the album object
-
+album.songs.push(song)
+console.log(album)
 
 // Console log the length of the album's songs array to confirm it worked
-
+console.log(album.songs.length)
 // Task 10: Update the title of the song to be all lowercase. 
 // Console log the album object to check your change
-
-
+album.songs[0].title.toLowerCase();
+console.log(album)
 // Commit your changes with an appropriate message.
 // ----------------------------------
 // EXTRA CREDIT
